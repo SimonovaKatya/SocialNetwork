@@ -9,6 +9,12 @@ const MyPosts = (props) => {
         {id: 2, message: 'Hi', likesCount: 17},
         {id: 3, message: 'Hi', likesCount: 17},
         {id: 4, message: 'Hi', likesCount: 17},
+        {id: 5, message: 'Hi', likesCount: 17},
+        {id: 6, message: 'Hi', likesCount: 20},
+        {id: 7, message: 'Hi', likesCount: 17},
+        {id: 8, message: 'Hi', likesCount: 17},
+        {id: 9, message: 'Hi', likesCount: 27},
+        {id: 10, message: 'Hi', likesCount: 17},
 
     ]
 
