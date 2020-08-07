@@ -1,11 +1,12 @@
-import React from 'react';
-import  classes from './Music.module.css';
+import React from "react";
+import classes from './Music.module.css';
 
-const Music = () => {
-    return <header className={classes.header}>
-        <img
-            src="https://blog.marketveep.com/hs-fs/hubfs/fanta%20logo.png?width=163&name=fanta%20logo.png"/>
-    </header>
+const Music = (props) => {
+    return (
+        <div>
+            Music
+        </div>
+    )
 }
 
 export default Music;
