@@ -5,6 +5,12 @@ const Messages = (props) => {
     return (
         <div>
             Messages
+            Messages
+            Messages
+            Messages
+            Messages
+            Messages
+            Messages
         </div>
     )
 }
