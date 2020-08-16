@@ -2,58 +2,59 @@ import React from "react";
 import classes from './Messages.module.css'
 import {NavLink} from "react-router-dom";
 
-const Messages = (props) => {
+
+const DialogItem = (props) => {
+    let path = 'dialogs' + props.id;
+
     return (
-        <div className={classes.content}>
-            <div className={classes.dialogs}>
-                <div className={classes.dialogsItems}>
-                    <div className={classes.item}>
-                       <NavLink to='/dialogs/1'>Sasha</NavLink>
-                    </div>
-                    <div className={classes.item +' '+ classes.active}>
-                        <NavLink to='/dialogs/2'>Katy</NavLink>
-                    </div>
-                    <div className={classes.item}>
-                      <NavLink to='/dialogs/3'>Nasty</NavLink>
-                    </div>
-                    <div className={classes.item}>
-                       <NavLink to='/dialogs/4'>Polina</NavLink>
-                    </div>
-                    <div className={classes.item}>
-                        <NavLink to='/dialogs/5'>Vlad</NavLink>
-                    </div>
-                    <div className={classes.item}>
-                        <NavLink to='/dialogs/6'>Max</NavLink>
-                    </div>
-                    <div className={classes.item}>
-                        <NavLink to='/dialogs/7'>Mark</NavLink>
-                    </div>
-                    <div className={classes.item}>
-                        <NavLink to='/dialogs/8'>Valera</NavLink>
-                    </div>
-                    <div className={classes.item}>
-                        <NavLink to='/dialogs/9'>Anton</NavLink>
-                    </div>
-                    <div className={classes.item}>
-                        <NavLink to='/dialogs/10'>Andrey</NavLink>
-                    </div>
-                    <div className={classes.item}>
-                        <NavLink to='/dialogs/11'>Sveta</NavLink>
-                    </div>
-                </div>
-                <div className={classes.messages}>
-                    <div className={classes.message}>Bue</div>
-                    <div className={classes.message}>How are you?</div>
-                    <div className={classes.message}>HIHI</div>
-                    <div className={classes.message}>Bue</div>
-                    <div className={classes.message}>Bue</div>
-                    <div className={classes.message}>TSU</div>
-                    <div className={classes.message}>HIHI</div>
-                    <div className={classes.message}>How are you?</div>
-                    <div className={classes.message}>HIHI</div>
-                    <div className={classes.message}>hahahah</div>
-                    <div className={classes.message}>How are you?</div>
-                </div>
+        <div className={classes.dialog + '' + classes.active}>
+            <NavLink to={path}>  {props.name} </NavLink>
+
+        </div>
+    )
+}
+
+
+const Message = (props) => {
+    return (
+        <div className={classes.message}>
+            {props.message}
+        </div>
+    )
+}
+
+const Messages = (props) => {
+
+    let dialogsData = [
+        {id: 1, name: 'Dimych'},
+        {id: 2, name: 'Andrew'},
+        {id: 3, name: 'Sveta'},
+        {id: 4, name: 'Sasha'},
+        {id: 5, name: 'Victor'},
+        {id: 6, name: 'Valera'}
+    ]
+
+    let dialogsElement = dialogsData.map(d => <DialogItem name={d.name} id={d.id}/>)
+
+    let messagesData = [
+        {id: 1, message: 'Hi'},
+        {id: 2, message: 'How your it-kamasutra?'},
+        {id: 3, message: 'Yo'},
+        {id: 4, message: 'Yo'},
+        {id: 5, message: 'Yo'},
+        {id: 6, message: 'Yo'}
+    ]
+
+    let messagesElement = messagesData.map(m => <Message message={m.message} id={m.id}/>)
+
+
+    return (
+        <div className={classes.dialogs}>
+            <div className={classes.dialogsItems}>
+                {dialogsElement}
+            </div>
+            <div className={classes.messages}>
+                {messagesElement}
             </div>
         </div>
     )
