@@ -1,0 +1,34 @@
+
+.content {
+    background: #E5DBDB;
+}
+
+.dialogs {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+
+.dialogsItems {
+    background: #C4C4C4;
+    padding: 20px;
+}
+
+.dialogsItems .active{
+    color: gold;
+}
+
+.item {
+    padding: 10px;
+    border: 2px solid red;
+}
+
+.messages {
+    background: #C59898;
+    padding: 20px;
+}
+
+.message {
+    padding: 10px;
+    border: 2px solid red;
+}
