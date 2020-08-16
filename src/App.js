@@ -30,8 +30,6 @@ const App = () => {
         <div className='app-wrapper'>
           <Header/>
           <Navbar/>
-          {/*  <NavBar1 list={L} isRed={isRed}/>*/}
-          {/*   <button onClick={() => setIsRed(!isRed)}>сменить цвет</button>*/}
           <div className='app-wrapper-content'>
             <Route path='/profile' component={Profile}/>
             <Route path='/messages' component={Messages}/>

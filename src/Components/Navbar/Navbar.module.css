@@ -1,13 +1,25 @@
 .nav {
     grid-area: n;
-    background-color: sandybrown;
+    background-color: #CEC7C7;
 }
 
 .item a{
-    color: white;
+    color: black;
     text-decoration: none;
+
 }
 
 .item a.active {
-    color: gold;
+    background-color:#C59898 ;
+    border: 2px solid red;
+}
+
+.item{
+    padding: 5px;
+    margin: 15px;
+    font-size: large;
+    background-color: #E5DBDB;
+    font-weight: bold;
+    font-family: Roboto;
+    text-align: center;
 }
