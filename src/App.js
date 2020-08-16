@@ -1,16 +1,8 @@
 import React, {useState} from 'react';
 import './App.css';
-import Header from "./Components/Header/Header";
-import Navbar from "./Components/Navbar/Navbar";
-import Profile from "./Components/Profile/Profile";
 import Messages from "./Components/Messages/Messages";
 import {BrowserRouter, Route} from "react-router-dom";
-import News from "./Components/News/News";
-import Music from "./Components/Music/Music";
-import Settings from "./Components/Settings/Settings";
-import Games from "./Components/Games/Games";
-import Videos from "./Components/Videos/Videos";
-import Friends from "./Components/Friends/Friends";
+
 
 
 /*const L = [
@@ -24,26 +16,13 @@ const App = () => {
   /* const [isRed, setIsRed] = useState(true)*/
 
   return (
-      <BrowserRouter>
+<BrowserRouter>
+  <Messages/>
+  <Route exact path='/dialogs' component={Messages}/>
+</BrowserRouter>
 
 
-        <div className='app-wrapper'>
-          <Header/>
-          <Navbar/>
-          {/*  <NavBar1 list={L} isRed={isRed}/>*/}
-          {/*   <button onClick={() => setIsRed(!isRed)}>сменить цвет</button>*/}
-          <div className='app-wrapper-content'>
-            <Route path='/profile' component={Profile}/>
-            <Route path='/messages' component={Messages}/>
-            <Route path='/friends' component={Friends}/>
-            <Route path='/news' component={News}/>
-            <Route path='/music' component={Music}/>
-            <Route path='/videos' component={Videos}/>
-            <Route path='/games' component={Games}/>
-            <Route path='/settings' component={Settings}/>
-          </div>
-        </div>
-      </BrowserRouter>
+
   );
 }
 
