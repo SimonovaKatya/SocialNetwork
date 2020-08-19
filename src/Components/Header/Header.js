@@ -1,10 +1,11 @@
 import React from 'react';
 import  classes from './Header.module.css';
+import img from './Star 1.svg'
 
 const Header = () => {
     return <header className={classes.header}>
         <img
-            src="https://c7.hotpng.com/preview/467/736/975/star-clip-art-star.jpg"/>
+            src={img}/>
     </header>
 }
 

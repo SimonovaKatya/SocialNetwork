@@ -9,7 +9,7 @@
 
 }
 
-.item a.active {
+.item .active {
     background-color:#C59898 ;
     border: 2px solid red;
 }
