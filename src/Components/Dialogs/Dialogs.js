@@ -1,19 +1,17 @@
 import React from "react";
-import classes from './Messages.module.css'
+import classes from './Dialogs.module.css';
 import {NavLink} from "react-router-dom";
-
 
 const DialogItem = (props) => {
     let path = 'dialogs' + props.id;
 
     return (
-        <div className={classes.dialog + '' + classes.active}>
+        <div className={classes.dialogs + '' + classes.active}>
             <NavLink to={path}>  {props.name} </NavLink>
 
         </div>
     )
 }
-
 
 const Message = (props) => {
     return (
@@ -23,7 +21,7 @@ const Message = (props) => {
     )
 }
 
-const Messages = (props) => {
+const Dialogs = (props) => {
 
     let dialogsData = [
         {id: 1, name: 'Dimych'},
@@ -34,7 +32,7 @@ const Messages = (props) => {
         {id: 6, name: 'Valera'}
     ]
 
-    let dialogsElement = dialogsData.map(d => <DialogItem name={d.name} id={d.id}/>)
+    let dialogsElement = dialogsData.map( d => <DialogItem name={d.name} id={d.id}/>)
 
     let messagesData = [
         {id: 1, message: 'Hi'},
@@ -45,8 +43,7 @@ const Messages = (props) => {
         {id: 6, message: 'Yo'}
     ]
 
-    let messagesElement = messagesData.map(m => <Message message={m.message} id={m.id}/>)
-
+    let messagesElement = messagesData.map( m => <Message message={m.message} id={m.id}/>)
 
     return (
         <div className={classes.dialogs}>
@@ -60,4 +57,4 @@ const Messages = (props) => {
     )
 }
 
-export default Messages;
+export default Dialogs;
