@@ -1,29 +1,29 @@
-
 .content {
     background: #E5DBDB;
 }
-
 .dialogs {
     display: grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:1fr 1fr;
     background: #E5DBDB;
 }
-
+.dialog{
+    padding: 30px;
+    border: 2px solid red;
+}
 .dialogsItems {
     background: #C4C4C4;
     padding: 20px;
-}
+    border: 2px solid red;
 
-.dialogsItems .active{
+}
+.DialogsItems .active{
     color: gold;
 }
-
 .item {
     padding: 10px;
     border: 2px solid red;
 }
-
 .messages {
     background: #C59898;
     padding: 20px;
