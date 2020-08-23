@@ -31,14 +31,14 @@ const App = () => {
           <Header/>
           <Navbar/>
           <div className='app-wrapper-content'>
-            <Route path='/profile' component={Profile}/>
-            <Route path='/messages' component={Messages}/>
-            <Route path='/friends' component={Friends}/>
-            <Route path='/news' component={News}/>
-            <Route path='/music' component={Music}/>
-            <Route path='/videos' component={Videos}/>
-            <Route path='/games' component={Games}/>
-            <Route path='/settings' component={Settings}/>
+            <Route path='/profile' render={() => <Profile/>}/>
+            <Route path='/messages'  render={() => <Messages/>}/>
+            <Route path='/friends'  render={() => <Friends/>}/>
+            <Route path='/news'  render={() =><News/>}/>
+            <Route path='/music' render={() =><Music/>}/>
+            <Route path='/videos'  render={() =><Videos/>}/>
+            <Route path='/games'  render={() =><Games/>}/>
+            <Route path='/settings' render={() =><Settings/>}/>
           </div>
         </div>
       </BrowserRouter>
