@@ -1,11 +1,19 @@
 import React from 'react';
-import  classes from './Friends.module.css';
+import classes from './Friends.module.css';
+import ProfileInfo from "../Profile/ProfileInfo/ProfileInfo";
+import MyPosts from "../Profile/MyPosts/MyPosts";
 
 const Friends = () => {
-    return <header className={classes.header}>
-        <img
-            src="https://blog.marketveep.com/hs-fs/hubfs/fanta%20logo.png?width=163&name=fanta%20logo.png"/>
-    </header>
+    return (
+        <div className={classes.content}>
+            <div className={classes.friend}>
+ажавладлаэвлвжаэлжаэлэалэалпжэвалжэалпэва
+            </div>
+            <div>
+
+            </div>
+        </div>
+    );
 }
 
 export default Friends;

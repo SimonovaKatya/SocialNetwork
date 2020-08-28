@@ -1,6 +1,7 @@
 .nav {
     grid-area: n;
     background-color: #CEC7C7;
+
 }
 
 .item a{
@@ -22,4 +23,5 @@
     font-weight: bold;
     font-family: Roboto;
     text-align: center;
+    border-radius: 20px;
 }

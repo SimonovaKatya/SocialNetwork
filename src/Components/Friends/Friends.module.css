@@ -1,9 +1,22 @@
-.header {
-    grid-area: h;
-    background-color: green;
+.content{
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    width:925px; /* ширина блока */
+    height:700px; /* высота блока */
+    margin: 40px;
+    display: flex;
 }
 
-.header  img{
-    width: 60px;
+.friend{
+    width: 800px;
+    height: 600px;
+    background: #61dafb;
     border-radius: 20px;
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
