@@ -2,21 +2,52 @@
     background-color: #C4C4C4;
     border-radius: 20px;
     width:925px; /* ширина блока */
-    height:700px; /* высота блока */
+    height:770px; /* высота блока */
     margin: 40px;
     display: flex;
 }
+.search{
+    width: 800px;
+    height: 40px;
+    background: #E5DBDB;
+    position: relative;
+    border-radius: 20px;
+    margin-top: -60px;
+    text-align: center;
+}
 
-.friend{
+.search img{
+    margin-top: 5px;
+    margin-right: 750px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.friends{
     width: 800px;
     height: 600px;
-    background: #61dafb;
+    background: #E5DBDB;
     border-radius: 20px;
-    margin: 0;
-    background: yellow;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    position: relative;
+    margin: 80px auto;
+}
+
+.friend{
+    width: 700px;
+    height: 80px;
+    background-color: #C59898;
+    border-radius: 20px;
+    position: relative;
+    margin: 60px auto;
+    border: solid 2px;
+}
+
+.friend img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    position: relative;
+    margin: 10px;
 }
