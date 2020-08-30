@@ -4,7 +4,12 @@ import classes from './News.module.css';
 const News = (props) => {
     return (
         <div>
-            News
+            <div className={classes.post1}>
+dfdfd
+            </div>
+            <div  className={classes.post1}>
+dsfdfd
+            </div>
         </div>
     )
 }
