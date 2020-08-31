@@ -1,12 +1,13 @@
-.content{
+.content {
     background-color: #C4C4C4;
     border-radius: 20px;
-    width:925px; /* ширина блока */
-    height:770px; /* высота блока */
+    width: 925px; /* ширина блока */
+    height: 770px; /* высота блока */
     margin: 40px;
     display: flex;
 }
-.search{
+
+.search {
     width: 800px;
     height: 40px;
     background: #E5DBDB;
@@ -14,18 +15,21 @@
     border-radius: 20px;
     margin-top: -60px;
     text-align: center;
+    display: flex;
+    justify-content: start;
 }
 
-.search img{
+.search img {
     margin-top: 5px;
-    margin-right: 750px;
+    margin-left: 5px;
+    /*margin-right: 750px;*/
     width: 30px;
     height: 30px;
     border-radius: 30px;
     position: relative;
 }
 
-.friends{
+.friends {
     width: 800px;
     height: 600px;
     background: #E5DBDB;
@@ -34,20 +38,32 @@
     margin: 80px auto;
 }
 
-.friend{
+.friend {
     width: 700px;
     height: 80px;
     background-color: #C59898;
     border-radius: 20px;
-    position: relative;
     margin: 60px auto;
     border: solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
-.friend img{
+.friend img {
     width: 60px;
     height: 60px;
-    border-radius: 30px;
-    position: relative;
+    border-radius: 50%;
+    /*position: relative;*/
     margin: 10px;
+}
+
+.info {
+    width: 80%;
+}
+
+.textMessage {
+    margin-top: 5px;
+    border: 2px solid black;
+    overflow: hidden;
 }
