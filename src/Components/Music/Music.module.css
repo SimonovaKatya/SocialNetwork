@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 1em;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.search {
+    background-color: #CEC7C7;
+    grid-column: 1/4;
+    border-radius: 15px;
+}
+
+.searchLine{
+    border-radius: 15px;
+    background-color: #DBD5D5;
+    margin: 1em;
+    height: 2em;
+}
+
+.allMusic {
+    text-align: start;
+    background-color: #CEC7C7;
+    grid-column: 1/4;
+    border-radius: 15px;
+}
+
+.music {
+    border-radius: 15px;
+    background-color: #DBD5D5;
+    grid-gap: 1em;
+    margin: 2em;
+    height: 3em;
+
+}
+.example{
+    background-color: #61dafb;
+    /* icon/av/play_circle_filled_white_24px */
+
+    position: absolute;
+    left: 27.66%;
+    right: 68.14%;
+    top: 34.46%;
+    bottom: 59.71%;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(0, 0, 0, 0.54);
+
+
+    /* Path */
+
+    position: absolute;
+    left: 27.66%;
+    right: 68.14%;
+    top: 34.46%;
+    bottom: 59.71%;
+
+    background: #DADADA;
+
+
+    /* Path */
+
+    position: absolute;
+    left: 29.34%;
+    right: 69.47%;
+    top: 36.21%;
+    bottom: 61.46%;
+
+    background: #DADADA;
+
+}
