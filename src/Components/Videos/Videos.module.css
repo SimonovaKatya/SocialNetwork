@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 1em;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.search {
+    background-color: #CEC7C7;
+    grid-column: 1/4;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.text{
+    margin-top: -50px;
+    margin-left: 50px;
+}
+.searchLine {
+    border-radius: 15px;
+    background-color: #DBD5D5;
+    margin: 1em;
+    height: 2em;
+}
+
+.searchLine img{
+    width: 3em;
+    height: 3em;
+}
+
+.allMusic {
+    text-align: start;
+    background-color: #CEC7C7;
+    grid-column: 1/4;
+    border-radius: 15px;
+}
+
+.music {
+    border-radius: 15px;
+    background-color: #DBD5D5;
+    grid-gap: 1em;
+    margin: 2em;
+    height: 3em;
+
+}
+
+.music img{
+    width: 3em;
+    height: 3em;
+}
