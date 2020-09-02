@@ -7,7 +7,7 @@ const Post = (props) => {
     return (
         <div className={classes.item}>
             <img
-                src="https://cdn.nlotv.com/i/image_1140x561/uploads/nlo/news/5e15a12b4a94c_thumb_1920_79588.jpeg"/>
+                src="https://womanadvice.ru/sites/default/files/imagecache/width_660/20/viral/10beg_na_dvuh_lapah.jpg"/>
             {props.message}
             <div>
                 <span>like {props.like}</span>
@@ -32,11 +32,12 @@ function Profile() {
         <div className={classes.wrapperContent}>
             <div className={classes.avatar}>
                 <img src='https://i.pinimg.com/736x/fa/04/0d/fa040d4fb07882160031efd57461b911.jpg'/>
-                AVATAR
             </div>
 
             <div className={classes.descriptionBlock}>
-                ava + description
+              <div className={classes.name}>Name Surname</div>
+                <hr/>
+             <div className={classes.status}>Status information</div>
             </div>
 
             <div className={classes.friendList}>
@@ -50,7 +51,8 @@ function Profile() {
             </div>
 
             <div className={classes.personalInformation}>
-                INFORMATION
+                <div className={classes.textInformation}>INFORMATION</div>
+                <hr/>
             </div>
 
             <div className={classes.postsBlock}>
