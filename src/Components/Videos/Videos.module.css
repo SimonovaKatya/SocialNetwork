@@ -6,13 +6,14 @@
 .contentWrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax(50px, auto);
+    grid-auto-rows: minmax(100px, auto);
     grid-gap: 1em;
     margin: 2rem;
     border-radius: 10px;
 }
 
 .search {
+    height: 4em;
     background-color: #CEC7C7;
     grid-column: 1/4;
     border-radius: 15px;
@@ -36,23 +37,20 @@
     height: 3em;
 }
 
-.allMusic {
-    text-align: start;
+.allVideos {
+    display: grid;
     background-color: #CEC7C7;
     grid-column: 1/4;
     border-radius: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 200px;
 }
 
-.music {
+.video {
     border-radius: 15px;
-    background-color: #DBD5D5;
-    grid-gap: 1em;
+    background-color: #B7AAAA;
     margin: 2em;
-    height: 3em;
 
 }
 
-.music img{
-    width: 3em;
-    height: 3em;
-}
+
