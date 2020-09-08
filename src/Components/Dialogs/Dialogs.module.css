@@ -37,3 +37,14 @@
     padding: 10px;
     border: 2px solid red;
 }
+
+.hyi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hyi{
+    display: grid;
+    place-items: center;
+} dr
