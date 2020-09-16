@@ -23,14 +23,13 @@ const MyPosts = (props) => {
                         <textarea value={postBanan} onChange={(e) => setPostMessage(e.target.value)}></textarea>
                     </div>
                     <div>
-                        {/* MARIK DID IT, THAT BELOW*/}
                         <button onClick={() => {
                             setPostData([{
                                 id: Date.now(),
                                 message: postBanan,
                                 likesCount: (Math.random() * 100).toFixed(0)
                             }, ...postApelcin])
-                            setPostMessage('.!.        \\(-_-)/')
+                            setPostMessage('       \\(-_-)/')
                         }}>
                             Add post
                         </button>
