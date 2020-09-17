@@ -21,6 +21,7 @@ const pages = [
   {path: '/videos', component: <Videos/>},
   {path: '/games', component: <Games/>},
   {path: '/settings', component: <Settings/>},
+  {path: '/music', component: <Music/>},
 ]
 
 const App = () => {
