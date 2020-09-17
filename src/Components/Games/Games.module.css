@@ -39,7 +39,7 @@
 
 .allVideos {
     display: grid;
-    background-color: #CEC7C7;
+    background-color: #C59898;
     grid-column: 1/4;
     border-radius: 15px;
     grid-template-columns: repeat(3,1fr);
