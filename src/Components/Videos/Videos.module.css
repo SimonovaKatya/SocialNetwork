@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.search {
+    height: 4em;
+    background-color: #CEC7C7;
+    grid-column: 1/4;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.text{
+    margin-top: -50px;
+    margin-left: 50px;
+}
+.searchLine {
+    border-radius: 15px;
+    background-color: #DBD5D5;
+    margin: 1em;
+    height: 2em;
+}
+
+.searchLine img{
+    width: 3em;
+    height: 3em;
+}
+
+.allVideos {
+    display: grid;
+    background-color: #CEC7C7;
+    grid-column: 1/4;
+    border-radius: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 200px;
+}
+
+.video {
+    border-radius: 15px;
+    background-color: #B7AAAA;
+    margin: 2em;
+
+}
+
+
