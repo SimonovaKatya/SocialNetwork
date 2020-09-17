@@ -17,6 +17,10 @@ body{
     background: #C4C4C4;
     padding: 20px;
 }
+.dialogsItem{
+    padding: 10px;
+    border: 2px solid red;
+}
 
 .dialogsItems .active{
     color: gold;
@@ -35,4 +39,15 @@ body{
 .message {
     padding: 10px;
     border: 2px solid red;
+}
+
+.hyi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hyi{
+    display: grid;
+    place-items: center;
 }

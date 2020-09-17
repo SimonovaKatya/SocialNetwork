@@ -7,8 +7,8 @@ const DialogItem = (props) => {
 
     return (
         <div className={classes.dialogs + '' + classes.active}>
-            <div className={classes.dialogsItems}>
-                <NavLink to={path}>  {props.name} </NavLink>
+            <div className={classes.dialogsItem}>
+                <NavLink to={path}>  {props.name}gdffghfg </NavLink>
             </div>
 
 
@@ -16,4 +16,4 @@ const DialogItem = (props) => {
     )
 }
 
-export default DialogItem;
+// export default DialogItem;

@@ -13,31 +13,29 @@ import Games from "./Components/Games/Games";
 import Videos from "./Components/Videos/Videos";
 import Friends from "./Components/Friends/Friends";
 
+const pages = [
+  {path: '/profile', component: <Profile/>},
+  {path: '/dialogs', component: <Dialogs/>},
+  {path: '/friends', component: <Friends/>},
+  {path: '/news', component: <News/>},
+  {path: '/videos', component: <Videos/>},
+  {path: '/games', component: <Games/>},
+  {path: '/settings', component: <Settings/>},
+]
 
-let SomeComponent = () => <Dialogs/>
+const App = () => {
 
-const App = (props) => {
-
-    return (
-        <BrowserRouter>
-
-
-            <div className='app-wrapper'>
-                <Header/>
-                <Navbar/>
-                <div className='app-wrapper-content'>
-                    <Route path='/profile' render={() => <Profile/>}/>
-                    <Route path='/dialogs' render={SomeComponent}/>
-                    <Route path='/friends' render={() => <Friends/>}/>
-                    <Route path='/news' render={() => <News/>}/>
-                    <Route path='/music' render={() => <Music/>}/>
-                    <Route path='/videos' render={() => <Videos/>}/>
-                    <Route path='/games' render={() => <Games/>}/>
-                    <Route path='/settings' render={() => <Settings/>}/>
-                </div>
-            </div>
-        </BrowserRouter>
-    );
+  return (
+      <BrowserRouter>
+        <div className='app-wrapper'>
+          <Header/>
+          <Navbar/>
+          <div className='app-wrapper-content'>
+            {pages.map(page => <Route path={page.path} render={() => page.component}/>)}
+          </div>
+        </div>
+      </BrowserRouter>
+  );
 }
 
 

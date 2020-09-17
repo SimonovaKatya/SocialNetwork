@@ -1,24 +1,17 @@
-import React from 'react';
-import classes from '../Profile.module.css';
+import React, {useState} from 'react';
+import classes from './MyPosts.module.css';
 import Post from "./Post/Post";
 
 const MyPosts = (props) => {
 
-    let postData = [
+    let Data = [
         {id: 1, message: 'Hi', likesCount: 17},
-        {id: 2, message: 'Hi', likesCount: 17},
-        {id: 3, message: 'Hi', likesCount: 17},
-        {id: 4, message: 'Hi', likesCount: 17},
-        {id: 5, message: 'Hi', likesCount: 17},
-        {id: 6, message: 'Hi', likesCount: 20},
-        {id: 7, message: 'Hi', likesCount: 17},
-        {id: 8, message: 'Hi', likesCount: 17},
-        {id: 9, message: 'Hi', likesCount: 27},
-        {id: 10, message: 'Hi', likesCount: 17},
-
     ]
 
-    let postElement = postData.map( p => <Post message={p.message} like={p.likesCount}/>)
+    const [postBanan, setPostMessage] = useState('')
+    const [postApelcin, setPostData] = useState(Data)
+
+    let postElement = postApelcin.map(p => <Post message={p.message} like={p.likesCount}/>)
 
 
     return (
@@ -27,10 +20,20 @@ const MyPosts = (props) => {
                 <h3>My post</h3>
                 <div>
                     <div>
-                        <textarea></textarea>
+                        <textarea value={postBanan} onChange={(e) => setPostMessage(e.target.value)}></textarea>
                     </div>
                     <div>
-                        <button>Add post</button>
+                        <button onClick={() => {
+                            setPostData([{
+                                id: Date.now(),
+                                message: postBanan,
+                                likesCount: (Math.random() * 100).toFixed(0)
+                            }, ...postApelcin])
+                            setPostMessage('       \\(-_-)/')
+                        }}>
+                            Add post
+                        </button>
+                        {/*    */}
                     </div>
                 </div>
                 <div className={classes.posts}>
